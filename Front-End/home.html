@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>HOME</title>
+  </head>
+  <body
+    style="
+      margin-left: 7%;
+      margin-right: 10%;
+      background-color: rgb(255, 255, 255);
+    "
+  >
+    <h2>
+      <button style="float: right" id="logoutBtn">logout</button>
+      <div id="user"></div>
+      <p id="username"></p>
+      <p id="email"></p>
+    </h2>
+
+    <div>
+      <button
+        onclick="createCluster()"
+        style="
+          margin-left: 3%;
+          background-color: rgb(255, 255, 255);
+          border-radius: 2px;
+          border-color: black;
+        "
+      >
+        Create Clusters
+      </button>
+      <p
+        style="
+          margin-left: 3%;
+          width: 97%;
+          color: rgb(0, 0, 0);
+          background-color: rgb(211, 211, 211);
+          height: 20px;
+          padding: 3px;
+        "
+      >
+        My clusters:
+      </p>
+
+      <div id="cl"></div>
+    </div>
+
+    <script>
+      const token = localStorage.getItem("token");
+      axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+      if (!token) {
+        location.href = "Login.html";
+        // console.log(token);
+      }
+      function createCluster() {
+        location.href = "CreateCluster.html";
+      }
+
+      async function getUser() {
+        try {
+          const response = await axios.get(
+            "https://localhost:44398/api/users/user"
+          );
+          document.getElementById("username").innerHTML =
+            response.data.username;
+          document.getElementById("email").innerHTML = response.data.email;
+          console.log(response.data);
+        } catch (error) {
+          console.error(error);
+        }
+      }
+      getUser();
+
+      let myclusters = [];
+      //  https://localhost:44398/api/clusters/myclusters
+
+      async function getClusters() {
+        try {
+          const res = await axios.get(
+            "https://localhost:44398/api/clusters/myclusters"
+          );
+          myclusters = res.data;
+          console.log(myclusters);
+
+          const str = myclusters
+            .map(
+              (cluster) =>
+                `<li style="margin-top:5px; list-style-type: none; padding:0";"><button style="width:100%; background-color: rgb(235, 235, 235); " id="list"   onclick="cluster('${cluster}')">${cluster}</button></li>`
+            )
+            .join("");
+          console.log(str);
+          const ul = `<ul>${str}</ul>`;
+          const cl = document.getElementById("cl");
+          cl.innerHTML = ul;
+          console.log(ul);
+        } catch (err) {
+          console.log(err);
+        }
+      }
+      getClusters();
+
+      function cluster(str) {
+        location.href = `Cluster.html?cluster=${str}`;
+      }
+
+      function logout() {
+        localStorage.removeItem("token");
+        location.href = "Login.html";
+      }
+
+      const logoutBtn = document.querySelector("#logoutBtn");
+      logoutBtn.addEventListener("click", logout);
+    </script>
+  </body>
+</html>

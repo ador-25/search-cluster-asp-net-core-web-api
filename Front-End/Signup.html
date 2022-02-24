@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="SignupStyle.css">
+    <link rel="stylesheet" type=text/css href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="sign-up-page">
+        <h1><i class="fa fa-user-circle"></i>Sign up Here</h1>
+            <form id="signup-form">
+                <input type="email" class="input-box" placeholder="Email" id="email" style="border-width: 3px; height: 26px;">
+                <input type="username" class="input-box" placeholder="Username" id="username"  style="border-width: 3px;height: 26px;">
+                <input type="Fullname" class="input-box" placeholder="Fullname" id="fullname"  style="border-width: 3px;height: 26px;">
+                <input type="password" class="input-box" placeholder="Password" id="password"  style="border-width: 3px;height: 26px;">
+                <p><span><input type="checkbox"></span> agree to the terms and policy</p>
+                <button type="submit" class="signup-btn">Sign up</button>
+                <hr>
+                <p class="or">OR</p>
+                <button type="button" class="google-btn">Log in with Google</button>
+
+           
+            </form>
+            <script>
+                const form = document.getElementById('signup-form')
+    
+                async function signupUser(event){
+                    event.preventDefault()
+                    const username=document.getElementById('username')
+                    const email=document.getElementById('email')
+                    const fullname=document.getElementById('fullname')
+                    const password=document.getElementById('password')
+    
+                    try {
+                    const res = await axios.post('https://localhost:44398/api/authenticate/register', { username: username.value,email:email.value,fullname:fullname.value, password: password.value });
+                    console.log(res.data);
+
+                    if (res.data.status === 'Success') {
+                        location.href = 'Login.html';
+                    }
+
+                    } catch (err) {
+                        console.log(err); 
+                    } 
+                } 
+    
+                form.addEventListener('submit', signupUser)
+            </script>
+            
+
+
+</div>
+    
+</body>
+</html>

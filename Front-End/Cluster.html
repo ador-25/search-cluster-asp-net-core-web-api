@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+    li {
+      float: left;
+      margin-right: 3px;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111111;
+    }
+
+    .search-result {
+      display: block;
+      width: 100%;
+      padding: 20px 10px; margin: 10px; background-color: rgb(238, 238, 238);
+      text-align: left;
+    }
+
+    .search-result span {
+      color: rgb(59, 120, 252);
+      text-align: left; 
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Create cluster</title>
+  </head>
+
+  <body style="margin-left: 10%; margin-right: 10%; margin-top: 3%">
+    <input type="text" id="keyword" style="width: 80%" />
+    <button
+      id="searchButton"
+      style="
+        width: 70px;
+        background-color: rgb(160, 184, 248);
+        margin-bottom: 5px;
+      "
+    >
+      Search
+    </button>
+
+    <div style="background-color: rgb(211, 211, 211); padding: 5px">
+      <p>Cluster Name:</p>
+      <p id="c-name"></p>
+      <p>Cluster Description:</p>
+      <p id="c-desc"></p>
+    </div>
+    <div>
+      <p
+        style="
+          width: 100%;
+          color: rgb(0, 0, 0);
+          background-color: rgb(211, 211, 211);
+          height: 20px;
+          padding: 3px;
+        "
+      >
+        Add URL:
+      </p>
+    </div>
+    <div>
+      <input id="url" style="width: 55%" />
+      <input id="depth" style="width: 5%" />
+      <button
+        type="submit"
+        id="add-url"
+        style="width: 70px; background-color: rgb(160, 184, 248)"
+        onclick="addUrl()"
+      >
+        ADD URL
+      </button>
+      <ul>
+        <li>Crawling strategies:</li>
+        <li>
+          <input type="checkbox" id="pdf" name="pdf" value="pdf" />
+          <label for="vehicle1"> .pdf</label>
+        </li>
+        <li>
+          <input type="checkbox" id="docx" name="docx" value="docx" />
+          <label for="vehicle1"> .docx</label>
+        </li>
+        <li>
+          <input type="checkbox" id="txt" name="txt" value="txt" />
+          <label for="vehicle1"> .txt</label>
+        </li>
+        <li>
+          <input type="checkbox" id="html" name="html" value="html" />
+          <label for="vehicle1"> html</label>
+        </li>
+        <li>
+          <input type="checkbox" id="all" name="all" value="all" />
+          <label for="vehicle1"> all</label>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <ul id="renderResult"></ul>
+    </div>
+    <script>
+      var c_id = "";
+      // function pdf() {
+      //   let result = [];
+
+      //   const nac = document.getElementById("searchtext");
+      //   try {
+      //     const t = "https://localhost:44398/api/searchcluster/" + nac;
+      //     const r = axios.get(t);
+      //     result = r.data.toArray();
+      //     console.log(result);
+      //     for (var i in r) {
+      //       result.push([i, r[i]]);
+      //       console.log(r[i]);
+      //     }
+      //   } catch (err) {
+      //     console.log(err);
+      //   }
+      // }
+
+      document.getElementById("url").innerHTML = "";
+      document.getElementById("depth").innerHTML = "";
+
+      var id = "";
+      const d = window.location.href.split("=")[1];
+      console.log(d);
+      const token = localStorage.getItem("token");
+      axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+      if (!token) {
+        location.href = "Login.html";
+        // console.log(token);
+      }
+
+      async function getClusterInfo() {
+        try {
+          const tempUrl = "https://localhost:44398/api/clusters/" + d;
+          const res = await axios.get(tempUrl);
+
+          c_id = res.data.clusterId;
+          console.log({ c_id });
+
+          document.getElementById("c-name").innerHTML = res.data.clusterName;
+          document.getElementById("c-desc").innerHTML = res.data.description;
+        } catch (err) {
+          console.log(err);
+        }
+      }
+
+      getClusterInfo();
+
+      async function addUrl() {
+        var pdf = document.getElementById("pdf");
+        var docx = document.getElementById("docx");
+        var txt = document.getElementById("txt");
+        var html = document.getElementById("html");
+        var all = document.getElementById("all");
+
+        if (
+          pdf.checked == true ||
+          docx.checked == true ||
+          html.checked == true ||
+          txt.checked == true ||
+          all.checked == true
+        ) {
+          const url = document.getElementById("url");
+          const depth = document.getElementById("depth");
+
+          try {
+            const tempUrl = "https://localhost:44398/api/url/" + d;
+            const res = await axios.post(tempUrl, {
+              url: url.value,
+              depth: depth.value,
+            });
+            console.log(res.data);
+            if (all.checked == true) {
+              const postStrategy =
+                "https://localhost:44398/api/urlstrategy/" + res.data.urlId;
+              try {
+                var temp = await axios.post(postStrategy + "/pdf");
+                console.log("pdf posted");
+                temp = await axios.post(postStrategy + "/docx");
+                console.log("docx posted");
+                temp = await axios.post(postStrategy + "/html");
+                console.log(temp.data);
+                temp = await axios.post(postStrategy + "/txt");
+                console.log(temp.data);
+              } catch (err) {
+                console.log("cant post" + err);
+              }
+            } else {
+              const baseUrl =
+                "https://localhost:44398/api/urlstrategy/" + res.data.urlId;
+              if (pdf.checked == true) {
+                var temp = await axios.post(baseUrl + "/pdf");
+                console.log("pdf posted");
+              }
+              if (docx.checked == true) {
+                var temp = await axios.post(baseUrl + "/docx");
+                console.log("docx posted");
+              }
+              if (txt.checked == true) {
+                var temp = await axios.post(baseUrl + "/txt");
+                console.log("txt posted");
+              }
+              if (html.checked == true) {
+                var temp = await axios.post(baseUrl + "/html");
+                console.log("non html posted");
+              }
+            }
+            document.getElementById("url").innerHTML = "";
+            document.getElementById("depth").innerHTML = "";
+            window.location.reload();
+          } catch (err) {
+            console.log(err);
+          }
+        } else {
+          alert("please select strategy");
+        }
+      }
+
+      const searchButton = document.querySelector("#searchButton");
+
+      searchButton.addEventListener("click", searchCluster);
+
+      async function searchCluster() {
+        try {
+          const keyword = document.querySelector("#keyword").value;
+          const searchUrl = `http://localhost:4000/search/${c_id}?keyword=${keyword.toLowerCase()}`;
+
+          const res = await axios.get(searchUrl);
+
+          const render = document.querySelector("#renderResult");
+
+          let strRender = "";
+
+          res.data.forEach((data) => {
+            let urlId = data._source.urlId;
+            const text = data._source.data.toLowerCase();
+
+            let result = data._source.data
+              .toLowerCase()
+              .indexOf(keyword.toLowerCase());
+            console.log(result);
+            const shortRes = text.substring(result, result + 30) + "...";
+
+            strRender += `<li class="search-result">
+              <span>Url: ${urlId}</span> <br />
+              Result: ${shortRes}
+              </li>`;
+          });
+
+          render.innerHTML = strRender;
+        } catch (err) {
+          console.log(err);
+        }
+      }
+    </script>
+  </body>
+</html>

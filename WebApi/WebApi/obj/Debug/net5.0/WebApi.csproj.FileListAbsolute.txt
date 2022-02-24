@@ -1,0 +1,133 @@
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\appsettings.Development.json
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\appsettings.json
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\WebApi.exe
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\WebApi.deps.json
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\WebApi.runtimeconfig.json
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\WebApi.runtimeconfig.dev.json
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\WebApi.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\ref\WebApi.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\WebApi.pdb
+E:\327project\WebApi\WebApi\obj\Debug\net5.0\WebApi.GeneratedMSBuildEditorConfig.editorconfig
+E:\327project\WebApi\WebApi\obj\Debug\net5.0\WebApi.AssemblyInfoInputs.cache
+E:\327project\WebApi\WebApi\obj\Debug\net5.0\WebApi.AssemblyInfo.cs
+E:\327project\WebApi\WebApi\obj\Debug\net5.0\WebApi.csproj.CoreCompileInputs.cache
+E:\327project\WebApi\WebApi\obj\Debug\net5.0\WebApi.MvcApplicationPartsAssemblyInfo.cache
+E:\327project\WebApi\WebApi\obj\Debug\net5.0\staticwebassets\WebApi.StaticWebAssets.Manifest.cache
+E:\327project\WebApi\WebApi\obj\Debug\net5.0\staticwebassets\WebApi.StaticWebAssets.xml
+E:\327project\WebApi\WebApi\obj\Debug\net5.0\scopedcss\bundle\WebApi.styles.css
+E:\327project\WebApi\WebApi\obj\Debug\net5.0\WebApi.RazorTargetAssemblyInfo.cache
+E:\327project\WebApi\WebApi\obj\Debug\net5.0\WebApi.dll
+E:\327project\WebApi\WebApi\obj\Debug\net5.0\ref\WebApi.dll
+E:\327project\WebApi\WebApi\obj\Debug\net5.0\WebApi.pdb
+E:\327project\WebApi\WebApi\obj\Debug\net5.0\WebApi.genruntimeconfig.cache
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Humanizer.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\327project\WebApi\WebApi\obj\Debug\net5.0\WebApi.csproj.CopyComplete
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Google.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Google.Apis.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Google.Apis.Auth.PlatformServices.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Google.Apis.Auth.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Google.Apis.Core.dll
+E:\327project\WebApi\WebApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\appsettings.Development.json
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\appsettings.json
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\WebApi.exe
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\WebApi.deps.json
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\WebApi.runtimeconfig.json
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\WebApi.runtimeconfig.dev.json
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\WebApi.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\ref\WebApi.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\WebApi.pdb
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Google.Apis.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Google.Apis.Auth.PlatformServices.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Google.Apis.Auth.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Google.Apis.Core.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Humanizer.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Google.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\My Projects\search-cluster\WebApi\WebApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\My Projects\search-cluster\WebApi\WebApi\obj\Debug\net5.0\WebApi.csprojAssemblyReference.cache
+D:\My Projects\search-cluster\WebApi\WebApi\obj\Debug\net5.0\WebApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Projects\search-cluster\WebApi\WebApi\obj\Debug\net5.0\WebApi.AssemblyInfoInputs.cache
+D:\My Projects\search-cluster\WebApi\WebApi\obj\Debug\net5.0\WebApi.AssemblyInfo.cs
+D:\My Projects\search-cluster\WebApi\WebApi\obj\Debug\net5.0\WebApi.csproj.CoreCompileInputs.cache
+D:\My Projects\search-cluster\WebApi\WebApi\obj\Debug\net5.0\WebApi.MvcApplicationPartsAssemblyInfo.cache
+D:\My Projects\search-cluster\WebApi\WebApi\obj\Debug\net5.0\staticwebassets\WebApi.StaticWebAssets.Manifest.cache
+D:\My Projects\search-cluster\WebApi\WebApi\obj\Debug\net5.0\staticwebassets\WebApi.StaticWebAssets.xml
+D:\My Projects\search-cluster\WebApi\WebApi\obj\Debug\net5.0\scopedcss\bundle\WebApi.styles.css
+D:\My Projects\search-cluster\WebApi\WebApi\obj\Debug\net5.0\WebApi.RazorTargetAssemblyInfo.cache
+D:\My Projects\search-cluster\WebApi\WebApi\obj\Debug\net5.0\WebApi.csproj.CopyComplete
+D:\My Projects\search-cluster\WebApi\WebApi\obj\Debug\net5.0\WebApi.dll
+D:\My Projects\search-cluster\WebApi\WebApi\obj\Debug\net5.0\ref\WebApi.dll
+D:\My Projects\search-cluster\WebApi\WebApi\obj\Debug\net5.0\WebApi.pdb
+D:\My Projects\search-cluster\WebApi\WebApi\obj\Debug\net5.0\WebApi.genruntimeconfig.cache

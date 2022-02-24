@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 2.3%;
+    background-color: gainsboro;
+    height: 90vh;
+    font-family: sans-serif;
+}
+.login{
+    width: 280px;
+    height: 370px;
+    background-color:black;
+    color: black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 40px 25px;
+    border-radius: 10px;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login h1{
+    background-color:gainsboro;
+    border-radius: 6px;
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+.login input{
+    width: 100%;
+    margin-bottom: 18px;
+    border-radius: 4px;
+}
+
+.login input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 2px solid gainsboro;
+    background: transparent;
+    color: gainsboro;
+    outline: none;
+    height: 20px;
+    font-size: 16px;
+
+}
+
+.login input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 30px;
+    color: gainsboro;
+    background: black;
+    font-size: 17px;
+    border-radius: 20px;
+
+}
+
+.login input[type="submit"]:hover
+{
+    cursor: pointer;
+    background-color: gainsboro;
+    color: black;
+    font-weight: bold;
+}
+
+.login a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: gainsboro;
+}
+
+.login a:hover{
+    color:tomato;
+}

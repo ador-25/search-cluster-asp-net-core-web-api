@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Read Text File</title> 
+</head> 
+  
+<body> 
+    <input type="text" id="c-id">
+    
+    <input type="file" name="inputfile"
+            id="inputfile"> 
+    <br> 
+   
+    <pre id="output"></pre> 
+
+      
+    <script type="text/javascript"> 
+    var colors =[]
+    var temp=[]
+
+    
+        document.getElementById('inputfile') 
+            .addEventListener('change', function() { 
+              
+            var fr=new FileReader(); 
+            fr.onload=function(){ 
+                document.getElementById('output') 
+                        .textContent=fr.result; 
+                        colors.push(fr.result)
+                        console.log(colors[0])
+                        temp=colors[0].split('\r\n')
+                        //console.log(temp)
+                        
+                        const c_id=document.getElementById('c-id').value
+
+                        const baseUrl='https://localhost:44398/api/ExtendedCluster/'
+                        var tempUrl=baseUrl+c_id
+                        for(var i=0;i<temp.length;i++){
+                            var res =  axios.post(tempUrl, { data:temp[i] });
+                             console.log(res)
+                        }
+                        //http://www.northsouth.edu/resources/fao.html
+                       
+                        console.log(tempUrl)
+                        
+            } 
+              
+            fr.readAsText(this.files[0]); 
+        }) 
+        console.log(temp)
+    </script> 
+</body> 
+  
+</html>
