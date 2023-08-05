@@ -20,8 +20,6 @@ namespace WebApi.Controllers
             _userData = userdata;
         }
        
-
-        [Authorize]
         [HttpGet]
         [Route("api/[controller]")]
         public IActionResult GetUsers()

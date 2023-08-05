@@ -244,7 +244,7 @@
       async function searchCluster() {
         try {
           const keyword = document.querySelector("#keyword").value;
-          const searchUrl = `http://localhost:4000/search/${c_id}?keyword=${keyword.toLowerCase()}`;
+          const searchUrl = `http://localhost:5000/api?query=${keyword.toLowerCase()}`;
 
           const res = await axios.get(searchUrl);
 
